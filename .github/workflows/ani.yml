@@ -30,7 +30,7 @@ on:
       SpeedProf:
         description: "SpeedProf"
         required: true
-        default: "3"
+        default: "2"
         type: choice
         options:
         - "2"
@@ -83,7 +83,7 @@ jobs:
           path: /usr/local/bin/ff*
       - name: "AniLoad Job - ${{env.AnimeName}} - ${{env.EpCode}}"
         run: |
-          DEOBFUS ./partials/EncTr.05d7f32e0d3e
+          DEOBFUS ./partials/EncTr.4efedf1df171
       - name: Prepare Matrix
         id: set-params
         run: |
